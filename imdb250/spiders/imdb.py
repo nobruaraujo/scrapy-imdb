@@ -11,5 +11,4 @@ class ImdbSpider(scrapy.Spider):
                 'ano': response.css('.unbold+ .unbold::text').get(),
                 'nota': response.css('.imdb-rating::text').get()
             }
-
         pass
